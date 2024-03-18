@@ -16,7 +16,7 @@ import java.net.UnknownHostException;
 @RequiredArgsConstructor
 public class HelloController {
 
-    private static Environment environment;
+    private final Environment environment;
 
     @GetMapping
     public ResponseEntity index(HttpServletRequest request) {
@@ -52,5 +52,5 @@ public class HelloController {
         }
         return null;
     }
-    
+
 }
