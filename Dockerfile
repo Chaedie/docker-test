@@ -1,7 +1,9 @@
 # Dockerfile
 
 # jdk17 Image Start
-FROM openjdk:17
+#FROM openjdk:17
+FROM openjdk:17-jdk-slim
+
 
 # 인자 설정 - JAR_File
 ARG JAR_FILE=build/libs/*.jar
